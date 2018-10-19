@@ -1,0 +1,8 @@
+.batch-launcher{
+    display: flex;
+    align-items: center;
+}
+
+.batch-component{
+    align-self: auto;
+}

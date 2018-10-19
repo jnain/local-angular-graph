@@ -1,0 +1,22 @@
+<section class="table-graph">
+  <data-table [tableData]="parentTableData" class="table-graph-component"></data-table>
+  <div class="chart table-graph-component" [chart]="chart"></div>
+</section>
+<section class="graph-commands">
+  <mat-form-field>
+    <input matInput [matDatepicker]="debut" [formControl]="debutControl" placeholder="Date début période">
+    <mat-datepicker-toggle matSuffix [for]="debut"></mat-datepicker-toggle>
+    <mat-datepicker #debut></mat-datepicker>
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [matDatepicker]="fin" [formControl]="finControl" placeholder="Date fin période">
+    <mat-datepicker-toggle matSuffix [for]="fin"></mat-datepicker-toggle>
+    <mat-datepicker #fin></mat-datepicker>
+  </mat-form-field>
+  
+  <mat-select placeholder="Granularité" [formControl]="granControl">
+    <mat-option *ngFor="let gran of grans" [value]="gran.value">
+      {{gran.viewValue}}
+    </mat-option>
+  </mat-select>
+</section>

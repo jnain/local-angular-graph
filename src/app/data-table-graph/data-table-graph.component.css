@@ -1,0 +1,17 @@
+.table-graph{
+    display: flex;
+    align-items: center;
+}
+
+.chart {
+    margin-left: 1rem;
+}
+
+.table-graph-component{
+    align-self: auto;
+}
+
+.graph-commands {
+    margin-top: 2rem;
+    display: flex;
+}

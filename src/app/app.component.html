@@ -1,0 +1,14 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<main>
+  <div style="text-align:center">
+    <h1>
+      Welcome to {{ title }}!
+    </h1>
+  </div>
+  <batch-launcher></batch-launcher>
+  <data-table *ngIf="!showDataTableGraph; else elseBlock"></data-table>
+  <ng-template #elseBlock>
+    <data-table-graph></data-table-graph>
+  </ng-template>
+</main>
+
